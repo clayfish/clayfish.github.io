@@ -1,3 +1,14 @@
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
 i.inline-logo {
     margin-right: 0.5%;
     padding: 4px 16px;
@@ -13,4 +24,32 @@ img.grayscale {
 img.grayscale:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
+}
+
+.social-media {
+    position: fixed;
+    top: 0.6rem;
+    right: 1.75rem;
+    font-size: 2rem;
+}
+
+.fa-twitter,.fa-twitter-square {
+    color: #55ACEE;
+}
+
+.fa-github,.fa-github-square {
+    color: #333;
+}
+
+.fa:hover,.fa:hover {
+    color: #0C639F;
+}
+
+.site-footer ul {
+    font-size: x-small;
+    list-style-type: none;
+}
+
+.site-footer ul > li {
+    margin-left: -1rem;
 }
