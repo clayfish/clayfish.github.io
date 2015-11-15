@@ -3,10 +3,15 @@
         display: none !important;
     }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
     .hidden-sm {
         display: none !important;
     }
+}
+
+.hidden {
+    display: none;
 }
 
 i.inline-logo {
@@ -33,15 +38,15 @@ img.grayscale:hover {
     font-size: 2rem;
 }
 
-.fa-twitter,.fa-twitter-square {
+.fa-twitter, .fa-twitter-square {
     color: #55ACEE;
 }
 
-.fa-github,.fa-github-square {
+.fa-github, .fa-github-square {
     color: #333;
 }
 
-.fa:hover,.fa:hover {
+.fa:hover, .fa:hover {
     color: #0C639F;
 }
 
@@ -51,5 +56,21 @@ img.grayscale:hover {
 }
 
 .site-footer ul > li {
-    margin-left: -1rem;
+    margin-left: -2.5rem;
+}
+
+div.two-column:before, div.two-column:after {
+    display: table;
+    content: " ";
+}
+
+div.two-column:after {
+    clear: both;
+}
+
+div.two-column > div {
+    margin-right: 0;
+    margin-left: 0;
+    width: 50%;
+    float: left;
 }
