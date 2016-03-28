@@ -41,23 +41,28 @@ $(document).ready(function () {
         body.find('.under-development').each(function () {
             $(this).hide();
         });
+    } else {
+        // Redirect to https
+        if (window.location.protocol != "https:") {
+            window.location.protocol = "https";
+        }
     }
 
-    if(checkCookie('serif')) {
+    if (checkCookie('serif')) {
         serif = JSON.parse(getCookie('serif'));
     } else {
         setCookie('serif', serif, 30);
     }
 
     var onFontChange = function () {
-        if(serif) {
+        if (serif) {
             body.css('font-family', '"Merriweather", serif');
         } else {
             body.css('font-family', '"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif');
         }
     };
 
-    if(serif) {
+    if (serif) {
         onFontChange();
     }
 
@@ -65,7 +70,7 @@ $(document).ready(function () {
 
     var oldFont = serif;
     setInterval(function () {
-        if(oldFont != serif) {
+        if (oldFont != serif) {
             oldFont = serif;
             setCookie('serif', serif, 30);
             onFontChange();
