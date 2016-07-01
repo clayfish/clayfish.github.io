@@ -74,3 +74,16 @@ div.two-column > div {
     width: 50%;
     float: left;
 }
+
+ul.nostyle {
+    list-style-type: none;
+}
+
+ol.nostyle {
+    list-style-type: none;
+}
+
+.colored {
+    color: #159957;
+}
+

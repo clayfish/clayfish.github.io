@@ -22,10 +22,14 @@
     <title>ClayFish</title>
     <link rel="icon" href="img/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Merriweather:300,300italic,700,700italic' rel="stylesheet"
           type="text/css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
@@ -46,7 +50,6 @@
 
         ga('create', 'UA-73420146-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 </head>
 <body>
@@ -156,11 +159,20 @@
                 href="mailto:info@clay.fish?subject=Getting%20in%20touch" target="_blank" title="Get in touch"><i
                 class="fa fa-envelope-square"></i> email</a>. If you or your physical mail wants to reach us, our postal
             address is as following.</p>
-        <address>ClayFish Technologies<br/>
-            86, Shiv Vihar, Kalyanpur<br/>
-            Kanpur UP 208017<br/>
-            INDIA
-        </address>
+
+        <div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <address>ClayFish Technologies<br/>
+                    86, Shiv Vihar, Kalyanpur<br/>
+                    Kanpur UP 208017<br/>
+                    INDIA
+                </address>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3570.5998840292477!2d80.24426831444569!3d26.50082478408088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c37ba2c7262df%3A0x8525cc4c37b2f6f!2sClayFish+Technologies!5e0!3m2!1sen!2sin!4v1467391946236"
+                        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 
     <div class="social-media hidden-xs hidden-sm">
@@ -176,7 +188,6 @@
         <span class="site-footer-credits">&copy; 2015-<span
                 class="current-year"></span> ClayFish Technologies LLP</span>
 
-
         <ul>
             <li>This website is open-source and can be forked on <a
                     href="//github.com/clayfish/clayfish.github.io" target="_blank" title="Fork me on GitHub">GitHub</a>.
@@ -187,6 +198,10 @@
 </section>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 
 </body>
