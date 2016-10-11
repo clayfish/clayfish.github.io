@@ -105,6 +105,10 @@ img.grayscale:hover {
     color: #55ACEE;
 }
 
+.fa-youtube, .fa-youtube-play, .fa-youtube-square {
+    color: #cc181e;
+}
+
 .fa-github, .fa-github-square {
     color: #333;
 }
