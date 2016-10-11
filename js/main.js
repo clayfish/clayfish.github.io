@@ -2,13 +2,24 @@ var DEV_MODE = true;
 var DEV_MODE_APPLIED = DEV_MODE && location.href.indexOf("localhost") == -1;
 var serif = false;
 
-function setCookie(name, value, exdays) {
+/**
+ *
+ * @param name
+ * @param value
+ * @param expiryDays
+ */
+function setCookie(name, value, expiryDays) {
     var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    d.setTime(d.getTime() + (expiryDays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toUTCString();
     document.cookie = name + "=" + value + "; " + expires;
 }
 
+/**
+ *
+ * @param cname
+ * @returns {*}
+ */
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -24,6 +35,11 @@ function getCookie(cname) {
     return "";
 }
 
+/**
+ *
+ * @param name
+ * @returns {boolean}
+ */
 function checkCookie(name) {
     return getCookie(name) != '';
 }
