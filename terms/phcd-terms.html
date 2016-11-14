@@ -18,7 +18,7 @@
     <meta name="robots" content="index,follow"/>
 
     <title>ClayFish</title>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="../img/favicon.ico">
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Merriweather:300,300italic,700,700italic' rel="stylesheet"
@@ -28,7 +28,7 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/custom.css" media="screen">
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -50,25 +50,39 @@
 <body>
 <section class="page-header">
     <img class="serif-switch" src="//gravatar.com/avatar/ceb268ac7d31478fc9b5efa2250b7703?s=150">
-
     <h1 class="project-name">ClayFish Technologies</h1>
-
     <h2 class="project-tagline">Faster. Smarter. Reliable.</h2>
 </section>
 
 <section class="container">
     <div class="site-content">
         <h2>
-            <a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a><i
-                class="fa fa-life-ring"></i> Support</h2>
+            <a id="terms" class="anchor" href="#terms" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a><i class="fa fa-user-secret"></i> Generic Terms & Conditions
+        </h2>
 
-        <p>We are happy to help you. Please see if your question is covered in the FAQs below. If you don't find
-            solution to your problem on this page, please <a href="https://clay.fish#contact">contact us</a>.</p>
+        <p>Last Updated: <strong>November 2016</strong></p>
+        <p>Use of "Prevent Hot Car Death" mobile apps is subjected to following terms and conditions. In the terms below
+            "You" means the user of our applications, software, websites and/or newsletters and "ClayFish Technologies"
+            means "ClayFish Technologies LLP".</p>
 
-        <h3>
-            <a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a><i
-                class="fa fa-question"></i> FAQs</h3>
-        <p>There are no questions added yet in the knowledge base yet.</p>
+        <ol>
+            <li>All the terms and conditions given at <a href="terms.html">https://clay.fish/terms/terms.html</a> are
+                applicable.
+            </li>
+            <li>ClayFish Technologies is not responsible for any loss of property or life because of the use of "Prevent
+                Hot Car Death" app.
+            </li>
+            <li>ClayFish Technologies is not responsible for any loss of property or life because of malfunctioning or
+                bug of "Prevent Hot Car Death" app.
+            </li>
+            <li>You cannot make any sort of claim for any loss occurred to you and/or your family because of any bug or
+                feature of the app.
+            </li>
+        </ol>
+
+        <p>By continuing use of "Prevent Hot Car Death" apps, you agree to the terms and conditions mentioned above. We
+            hope to have a long time relationship with our users.</p>
     </div>
 
     <div class="social-media hidden-xs hidden-sm">
@@ -78,6 +92,8 @@
                 class="fa fa-twitter-square"></i></a>
         <a href="https://www.facebook.com/aclayfish" target="_blank" title="ClayFish on Facebook"><i
                 class="fa fa-facebook-square"></i></a>
+        <!--<a href="https://www.facebook.com/aclayfish" target="_blank" title="ClayFish on YouTube"><i-->
+        <!--class="fa fa-youtube-play"></i></a>-->
     </div>
 
     <footer class="site-footer">
@@ -98,7 +114,17 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.learn-more').on('click', function () {
+            $('.more-' + $(this).data('target')).removeClass('hide');
+            $('.summary-' + $(this).data('target')).addClass('hide');
+            $(this).addClass('hide');
+        });
+    });
+</script>
 
 </body>
 </html>

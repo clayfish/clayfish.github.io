@@ -18,7 +18,7 @@
     <meta name="robots" content="index,follow"/>
 
     <title>ClayFish</title>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="../img/favicon.ico">
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Merriweather:300,300italic,700,700italic' rel="stylesheet"
@@ -28,7 +28,7 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/custom.css" media="screen">
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -50,25 +50,58 @@
 <body>
 <section class="page-header">
     <img class="serif-switch" src="//gravatar.com/avatar/ceb268ac7d31478fc9b5efa2250b7703?s=150">
-
     <h1 class="project-name">ClayFish Technologies</h1>
-
     <h2 class="project-tagline">Faster. Smarter. Reliable.</h2>
 </section>
 
 <section class="container">
     <div class="site-content">
         <h2>
-            <a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a><i
-                class="fa fa-life-ring"></i> Support</h2>
+            <a id="terms" class="anchor" href="#terms" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a><i class="fa fa-user-secret"></i> Generic Terms & Conditions
+        </h2>
 
-        <p>We are happy to help you. Please see if your question is covered in the FAQs below. If you don't find
-            solution to your problem on this page, please <a href="https://clay.fish#contact">contact us</a>.</p>
+        <p>Last Updated: <strong>November 2016</strong></p>
+        <p>Use of any of our applications/software including this website are subjected to following terms and
+            conditions. In the terms below "You" means the user of our applications, software, websites and/or
+            newsletters and "ClayFish Technologies" means "ClayFish Technologies LLP".</p>
 
-        <h3>
-            <a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a><i
-                class="fa fa-question"></i> FAQs</h3>
-        <p>There are no questions added yet in the knowledge base yet.</p>
+        <ol>
+            <li>You MUST not be a citizen of Islamic Republic of Pakistan or be affiliated with any company/agency
+                registered in the Islamic Republic of Pakistan.
+            </li>
+            <li>You MUST not be a dependent or an employee of a citizen of Islamic Republic of Pakistan.</li>
+            <li>You MUST not be funded by the Islamic Republic of Pakistan or any of the companies/agencies registered
+                in the Islamic Republic of Pakistan.
+            </li>
+            <li>If you are immediate family member of a martyr from the Republic of India, you entitle for special
+                discounted pricing. Please contact us at <a
+                        href="mailto:info@clay.fish?subject=Special%20discount%20for%20patriots">info@clay.fish</a> to
+                avail it.
+            </li>
+            <li>You cannot use the product or service in any other way than intended.</li>
+            <li>ClayFish reserves the rights to the code, application and its marketing. You are not entitled to the
+                updates, if not covered in a separate agreement.
+            </li>
+            <li>ClayFish Technologies reserves the rights to refuse service or product and/or continuation of the
+                service without
+                giving any reason.
+            </li>
+            <li>The software provided by ClayFish MUST not be used in warfare, weaponry, nuclear arsenal or in any other
+                destructive activity. User is also prohibited to use it for the development of missiles, fighter planes,
+                nuclear submarines, nuclear reactors or any kind of military use.
+            </li>
+            <li>Any terms specific to the application you are using are also applicable over and above the terms
+                mentioned here.
+            </li>
+            <li>ClayFish Technologies can gather personal information required to use the application you are using.
+                Please see <a href="../privacy.html">Privacy Policy</a> before using any of our apps, including this
+                website.
+            </li>
+        </ol>
+
+        <p>By continuing use of any of our apps, including this website, you agree to the terms and conditions mentioned
+            above. We hope to have a long time relationship with our users.</p>
     </div>
 
     <div class="social-media hidden-xs hidden-sm">
@@ -78,6 +111,8 @@
                 class="fa fa-twitter-square"></i></a>
         <a href="https://www.facebook.com/aclayfish" target="_blank" title="ClayFish on Facebook"><i
                 class="fa fa-facebook-square"></i></a>
+        <!--<a href="https://www.facebook.com/aclayfish" target="_blank" title="ClayFish on YouTube"><i-->
+        <!--class="fa fa-youtube-play"></i></a>-->
     </div>
 
     <footer class="site-footer">
@@ -98,7 +133,17 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.learn-more').on('click', function () {
+            $('.more-' + $(this).data('target')).removeClass('hide');
+            $('.summary-' + $(this).data('target')).addClass('hide');
+            $(this).addClass('hide');
+        });
+    });
+</script>
 
 </body>
 </html>
