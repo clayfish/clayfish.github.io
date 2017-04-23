@@ -29,23 +29,6 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="../stylesheets/custom.css" media="screen">
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-83779112-2', 'auto');
-        ga('send', 'pageview');
-    </script>
 </head>
 <body>
 <section class="page-header">
@@ -61,10 +44,10 @@
                     class="octicon octicon-link"></span></a><i class="fa fa-legal"></i> Generic Terms & Conditions
         </h2>
 
-        <p>Last Updated: <strong>November 2016</strong></p>
+        <p>Last Updated: <strong>April 2017</strong></p>
         <p>Use of any of our applications/software including this website are subjected to following terms and
             conditions. In the terms below "You" means the user of our applications, software, websites and/or
-            newsletters and "ClayFish Technologies" means "ClayFish Technologies LLP".</p>
+            newsletters and "ClayFish Technologies" means "ClayFish Technologies".</p>
 
         <ol>
             <li>You MUST not be a citizen of Islamic Republic of Pakistan or be affiliated with any company/agency
@@ -117,7 +100,7 @@
 
     <footer class="site-footer">
         <span class="site-footer-credits">&copy; 2015-<span
-                class="current-year"></span> ClayFish Technologies LLP</span>
+                class="current-year"></span> ClayFish Technologies</span>
 
         <ul>
             <li>This website is open-source and can be forked on <a
@@ -136,6 +119,21 @@
 <script src="../js/main.js"></script>
 
 <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-83779112-2', 'auto');
+    ga('send', 'pageview');
+
     $(document).ready(function () {
         $('.learn-more').on('click', function () {
             $('.more-' + $(this).data('target')).removeClass('hide');

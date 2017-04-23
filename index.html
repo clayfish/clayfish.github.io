@@ -29,27 +29,10 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" media="screen">
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-83779112-2', 'auto');
-        ga('send', 'pageview');
-    </script>
 </head>
 <body>
 <section class="page-header">
-    <img class="serif-switch" src="//gravatar.com/avatar/ceb268ac7d31478fc9b5efa2250b7703?s=150">
+    <img class="serif-switch" width="150px" height="150px" src="//gravatar.com/avatar/ceb268ac7d31478fc9b5efa2250b7703?s=150">
 
     <h1 class="project-name">ClayFish Technologies</h1>
 
@@ -183,7 +166,7 @@
 
     <footer class="site-footer">
         <span class="site-footer-credits">&copy; 2015-<span
-                class="current-year"></span> ClayFish Technologies LLP</span>
+                class="current-year"></span> ClayFish Technologies</span>
 
         <ul>
             <li>This website is open-source and can be forked on <a
@@ -202,6 +185,21 @@
 <script src="js/main.js"></script>
 
 <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-83779112-2', 'auto');
+    ga('send', 'pageview');
+
     $(document).ready(function() {
         $('.social-media').animate({'font-size': '9rem'});
         setTimeout(function() {

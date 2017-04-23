@@ -1,5 +1,5 @@
 var DEV_MODE = true;
-var DEV_MODE_APPLIED = DEV_MODE && location.href.indexOf("localhost") == -1;
+var DEV_MODE_APPLIED = DEV_MODE && location.href.indexOf("localhost") > -1;
 var serif = false;
 
 /**
@@ -52,12 +52,11 @@ $(document).ready(function () {
         $(this).html((now.getFullYear() + '').substring(2));
     });
 
-    if (DEV_MODE_APPLIED) {
+    if (!DEV_MODE_APPLIED) {
         //body.find('.site-content').html("We are building it up for you.");
         body.find('.under-development').each(function () {
             $(this).hide();
         });
-    } else {
         // Redirect to https
         if (window.location.protocol != "https:") {
             window.location.protocol = "https";
