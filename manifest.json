@@ -23,7 +23,7 @@
       "sizes": "192x192"
     }
   ],
-  "background_color": "#0C639F",
-  "display": "standalone",
+  "background_color": "#fad196",
+  "display": "browser",
   "start_url": "index.html?launcher=true"
 }
