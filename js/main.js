@@ -1,6 +1,6 @@
-var DEV_MODE = true;
-var DEV_MODE_APPLIED = DEV_MODE && location.href.indexOf("localhost") > -1;
-var serif = false;
+let DEV_MODE = true;
+const DEV_MODE_APPLIED = DEV_MODE && location.href.indexOf("localhost") > -1;
+let serif = false;
 
 /**
  *
